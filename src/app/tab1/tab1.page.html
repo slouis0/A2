@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    Página Inicial
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <h1 style="background-color:DodgerBlue;">Autor: Nícolas Nunes</h1> <br>
+  <p1 style="border:2px solid Tomato;">Este é um exemplo de aplicação com API covid-19</p1>
+  <br><img src="assets/img/mapa.png">  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">HOME</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-buttom size="medium" color="dark" (click)="sair()">
+      <ion-icon name="exit"></ion-icon>
+     </ion-fab-buttom>
+   </ion-fab>    
+  <app-explore-container name=""></app-explore-container>
+</ion-content>

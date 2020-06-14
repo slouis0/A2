@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Casos no País
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="efeitoRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-card *ngFor = "let casos of lista_casos">
+    <ion-card-header>
+      <ion-card-substitle>{{casos.release_date}}</ion-card-substitle>
+      <ion-card-tile>{{casos.title}}</ion-card-tile>
+    </ion-card-header>
+    <ion-card-content>
+      {{casos.overview}}
+    </ion-card-content>>   
+   </ion-card>
+</ion-content>
